@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import Login from './pages/Login'
 import Create from './pages/Create'
 import VideoProcessing from './pages/VideoProcessing'
@@ -13,7 +12,7 @@ import GenerateBulkVideos from './pages/GenerateBulkVideos'
 import VideoComplete from './pages/VideoComplete'
 import Terminate from './pages/Terminate'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link ,Navigate} from 'react-router-dom'
 
 function App() {
 
@@ -26,6 +25,7 @@ function App() {
        path='/create' 
        element={<Create/>}
       />
+       <Route path="/create?" element={<Navigate to="/create" replace />} />
       <Route 
        path='/video-processing' 
        element={<VideoProcessing/>}
