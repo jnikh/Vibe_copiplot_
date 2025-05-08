@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '../assets/image.png'
+import logo from '../assets/ixoralogo.png'
 import { FaUpload, FaVideo } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
@@ -9,11 +10,11 @@ const Create = () => {
     <div className="min-h-screen   bg-white px-8 py-6 font-Cardo">
     {/* Header */}
     <div className="flex justify-between items-center mb-6 mx-5">
-      <h1 className="text-xl  tracking-wide font-bold">VIBECOPILOT</h1>
+      <h1 className="text-xl  tracking-wide font-bold"></h1>
       <img
-        src={Avatar}
+        src={logo}
         alt="User"
-        className="w-10 h-10 rounded-full object-cover"
+        className="w-auto h-20  object-cover"
       />
     </div>
 
@@ -50,9 +51,9 @@ const Create = () => {
             Add a details to generate a new video.
           </p>
           <div className="flex space-x-4">
-            <button onClick={()=>navigate('/doctors')} className="bg-[#0c0b6b] text-white px-6 py-2 font-bold rounded hover:bg-[#1c1b7b]">
+            {/* <button onClick={()=>navigate('/doctors')} className="bg-[#0c0b6b] text-white px-6 py-2 font-bold rounded hover:bg-[#1c1b7b]">
               Upload
-            </button>
+            </button> */}
             <button onClick={()=>navigate('/create/profile')} className="border-2 border-[#0c0b6b] text-[#0c0b6b] px-6 py-2 rounded font-bold hover:bg-blue-50">
 
               Create

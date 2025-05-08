@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { Toaster } from 'react-hot-toast';
 import Login from './pages/Login'
 import Create from './pages/Create'
 import VideoProcessing from './pages/VideoProcessing'
@@ -17,6 +17,8 @@ import { HashRouter as Router, Routes, Route, Link ,Navigate} from 'react-router
 function App() {
 
   return (
+    <>
+    <Toaster position="top-right" />
     <Router>
       <Routes>
       <Route path="/" element={<Login />} />
@@ -65,6 +67,7 @@ function App() {
       </Routes>
        
     </Router>
+    </>
   )
 }
 

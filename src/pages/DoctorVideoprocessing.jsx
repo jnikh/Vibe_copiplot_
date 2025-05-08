@@ -13,7 +13,7 @@ const DoctorVideoprocessing = () => {
 
     {/* Title and Subtitle */}
     <h1 className="text-2xl font-bold mb-2">Processing Your Video</h1>
-    <p className="text-gray-400 mb-6">Hang tight! We’re analyzing your video and preparing your slides.</p>
+    <p className="text-gray-400 mb-6">Hang tight! We’re analyzing your video and preparing your Video.</p>
 
     {/* Illustration */}
     <div className="flex justify-center mb-10">
@@ -56,8 +56,8 @@ const DoctorVideoprocessing = () => {
       {/* Upload Status */}
       <h2 className="text-2xl font-bold mb-3">Video Upload Complete</h2>
       <p className="text-sm text-gray-500 mb-6">
-        Your file has been uploaded. SlideGenie is now processing your video. This may take a few
-        minutes depending on file size.
+        Your file has been uploaded. This may take a few
+        minutes.
       </p>
 
       {/* Buttons */}

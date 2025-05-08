@@ -8,8 +8,8 @@ const Doctors = () => {
   const navigate = useNavigate();
   const [importData, setImportData] = useState([
     {
-      employeeId: "P1",
-      employeeName: "Anish Mehta",
+      DoctorId: "P1",
+      DoctorName: "Anish Mehta",
       specialization: "Cardiologist",
       hospitalClinic: "K.J. Somaya",
       city: "Mumbai",
@@ -20,8 +20,8 @@ const Doctors = () => {
       status: "success"
     },
     {
-      employeeId: "P2",
-      employeeName: "Karan Roy",
+      DoctorId: "P2",
+      DoctorName: "Karan Roy",
       specialization: "Dermatologist",
       hospitalClinic: "Satyam",
       city: "Mumbai",
@@ -32,8 +32,8 @@ const Doctors = () => {
       status: "success"
     },
     {
-      employeeId: "P3",
-      employeeName: "Sunil Jagtap",
+      DoctorId: "P3",
+      DoctorName: "Sunil Jagtap",
       specialization: "Oncologist",
       hospitalClinic: "J-J. Hospital",
       city: "Mumbai",
@@ -44,8 +44,8 @@ const Doctors = () => {
       status: "error"
     },
     {
-      employeeId: "P3",
-      employeeName: "Sunil Jagtap",
+      DoctorId: "P3",
+      DoctorName: "Sunil Jagtap",
       specialization: "Oncologist",
       hospitalClinic: "J-J. Hospital",
       city: "Mumbai",
@@ -56,8 +56,8 @@ const Doctors = () => {
       status: "error"
     },
     {
-      employeeId: "P3",
-      employeeName: "Sunil Jagtap",
+      DoctorId: "P3",
+      DoctorName: "Sunil Jagtap",
       specialization: "Oncologist",
       hospitalClinic: "J-J. Hospital",
       city: "Mumbai",
