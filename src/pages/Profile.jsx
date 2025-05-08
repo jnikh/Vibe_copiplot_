@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
+import { doctorVideoGeneration } from '../api';
 import logo from '../assets/ixoralogo.png';
 import profile from '../assets/blank.jpg';
 import { FaUpload } from 'react-icons/fa';
@@ -194,18 +195,18 @@ const Profile = () => {
                 const blob = await fetch(profileImage).then(r => r.blob());
                 formDataToSend.append('image', blob, 'profile.jpg');
             }
+            const response = await doctorVideoGeneration(formDataToSend)
+            // const response = await axios.post(
+            //     'http://13.126.205.205:8002/api/generate-video/',
+            //     formDataToSend,
+            //     {
+            //         headers: {
+            //             'Content-Type': 'multipart/form-data'
+            //         }
+            //     }
+            // );
 
-            const response = await axios.post(
-                'http://13.126.205.205:8002/api/generate-video/',
-                formDataToSend,
-                {
-                    headers: {
-                        'Content-Type': 'multipart/form-data'
-                    }
-                }
-            );
-
-            navigate('/doctor-video', { state: { videoData: response.data } });
+            navigate('/doctor-video', { state: { videoData: response } });
             
         } catch (error) {
             console.error('API Error:', error);

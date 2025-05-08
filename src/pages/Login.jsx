@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bgImage from "../assets/login.png";
 import loginVideo from '../assets/login.mp4';
+import toast from "react-hot-toast";
 import flower from '../assets/ixoraflower.png'
 import logo from '../assets/ixoralogo.png'
 import { employeelogin } from "../api";
@@ -72,7 +73,7 @@ function Login() {
             navigate('/create');
         } catch (error) {
             console.error("Login error:", error.response?.data || error.message);
-            alert("Login failed. Please check your credentials.");
+            toast.error("Login failed. Please check your credentials.");
         }
     };
 

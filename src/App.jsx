@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-    <Toaster position="top-right" />
+    <Toaster position="top-center" />
     <Router>
       <Routes>
       <Route path="/" element={<Login />} />

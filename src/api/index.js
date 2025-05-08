@@ -1,10 +1,10 @@
 import axios from "axios"
 
-const BASE_URL = `http://13.126.205.205:8002/`
+const BASE_URL = `https://api.videomaker.digielvestech.in`
 
 export const employeelogin = async (data)=>{
     try {
-        const response = await axios.post(`http://13.126.205.205:8002/api/login/`,data)
+        const response = await axios.post(`${BASE_URL}/api/login/`,data)
         return response.data   
     } catch (error) {
         console.log("Error in login", error)
@@ -13,8 +13,8 @@ export const employeelogin = async (data)=>{
      
 }
 
-export const doctorVideoGeneration = async (data) =>{
-    try {
+export const doctorVideoGeneration = async (FormData) =>{
+    try {   
         const response = await axios.post(`${BASE_URL}/api/generate-video/`, FormData ,{
             headers: {
                 'Content-Type': 'multipart/form-data'

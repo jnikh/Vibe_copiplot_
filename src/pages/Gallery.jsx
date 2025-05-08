@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { getAllDoctors } from "../api";
 import logo from "../assets/ixoralogo.png";
 import doctors from "../assets/doctors.png";
 import { FaVideo, FaTable } from "react-icons/fa";
@@ -18,10 +19,12 @@ const Gallery = () => {
   useEffect(() => {
     const fetchDoctorsData = async () => {
       try {
-        const response = await axios.get(
-          "http://13.126.205.205:8002/api/doctors/"
-        );
-        setDoctorsData(response.data);
+        const response = await getAllDoctors()
+        // const response = await axios.get(
+        //   "http://13.126.205.205:8002/api/doctors/"
+        // );
+        console.log("doctor details",response)
+        setDoctorsData(response);
         setLoading(false);
       } catch (err) {
         setError(err.message);
