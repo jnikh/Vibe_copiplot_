@@ -20,9 +20,7 @@ const Gallery = () => {
     const fetchDoctorsData = async () => {
       try {
         const response = await getAllDoctors()
-        // const response = await axios.get(
-        //   "http://13.126.205.205:8002/api/doctors/"
-        // );
+        
         console.log("doctor details",response)
         setDoctorsData(response);
         setLoading(false);
