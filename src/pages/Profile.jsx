@@ -429,14 +429,14 @@ const Profile = () => {
                             </>
                         )}
                     </div>
-
+{/* 
                     <h3 className="text-lg font-semibold mb-2">Video Templates</h3>
-                    <label className="text-sm font-medium mb-1">Select Video Template</label>
-                    <select onClick={() => navigate("/gallery")} className="w-full mb-4 border border-gray-300 rounded-md px-4 py-2">
+                    <label className="text-sm font-medium mb-1">Select Video Template</label> */}
+                    {/* <select onClick={() => navigate("/gallery")} className="w-full mb-4 border border-gray-300 rounded-md px-4 py-2">
                         <option>Choose Template</option>
                         <option onClick={() => navigate("/gallery")}>Hypertension</option>
                         <option onClick={() => navigate("/gallery")}>Diabetes</option>
-                    </select>
+                    </select> */}
 
                     <div className="bg-white border border-red-300 p-3 rounded-md text-xs text-red-600 space-y-1">
                         <p>1. For better quality size should be width=515px, height=515px*</p>
